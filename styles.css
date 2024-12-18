@@ -1,0 +1,112 @@
+
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+/* Intro Section */
+.intro-section h1 {
+    font-size: 2.5rem;
+    color: #4682B4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #5F9EA0;
+}
+
+/* Hinata Figure */
+.hinata-section {
+    margin: 20px 0;
+}
+
+.hinata-figure {
+    width: 200px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px #87CEEB);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Surprise Message */
+.surprise-message {
+    margin-top: 20px;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 1.5rem;
+    color: #4682B4;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 15px 0;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #87CEEB;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4682B4;
+    transform: scale(1.1);
+}
+
+/* Friendship Game Button Styling */
+.game-btn {
+    background-color: #00bfff; /* Sky blue color */
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;/* Adjust spacing */
+    text-align: center;
+}
+
+.game-btn:hover {
+    background-color: #1e90ff; /* Darker shade on hover */
+}
